@@ -1,85 +1,124 @@
-NewsFeed 📢  
+# 🔖 NewsFeed App
 
-**NewsFeed** is a dynamic web application designed to provide users with real-time news updates and personalized content. Built with modern web technologies, it focuses on delivering an intuitive user experience and robust backend functionality.  
+A full-stack **NewsFeed application** where users can create posts, view all posts, and comment on each post. Built with **React.js**, **Tailwind CSS**, **Express.js**, and **MongoDB**.
 
-🚀 Features  
-- **Real-Time Updates:** Fetches and displays the latest news dynamically.  
-- **User Authentication:** Secured with **JWT** for user login and session management.  
-- **Media Storage:** Integrated with **Cloudinary** for efficient media file storage.  
-- **Responsive Design:** Optimized for cross-platform compatibility using **HTML5**, **CSS3**, and **JavaScript**.  
-- **Scalable Backend:** Built with **Node.js** and **Express.js**, ensuring smooth API communication.  
-- **Search and Filter Options:** Allows users to search and filter news articles seamlessly.  
+---
 
-🛠️ Tech Stack  
-- **Frontend:** HTML5, CSS3, JavaScript, React.js  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **Authentication:** JWT (JSON Web Tokens)  
-- **Media Storage:** Cloudinary  
-- **APIs:** RESTful APIs for fetching and managing data  
+## 🔗 Live Demo
 
-📂 Project Structure  
+> Coming soon...
+
+---
+
+## 📸 Features
+
+- 🔹 Create a post (name, title, body)
+- 🔹 View all posts on homepage
+- 🔹 Add comments on each post
+- 🔹 Styled with TailwindCSS
+- 🔹 REST API built with Express.js + MongoDB
+
+---
+
+## 🧹 Tech Stack
+
+| Frontend      | Backend         | Database | Styling     |
+|---------------|-----------------|----------|-------------|
+| React.js      | Node + Express  | MongoDB  | TailwindCSS |
+
+---
+
+## 🚀 How to Run Locally
+
+### 🔧 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/newsfeed-app.git
+cd newsfeed-app
 ```
-NewsFeed/
-│
+
+### 💻 2. Setup Backend (Express + MongoDB)
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file with:
+
+```
+PORT=4000
+MONGO_URI=mongodb://localhost:27017/newsfeedDB
+```
+
+Start the backend:
+
+```bash
+npm start
+```
+
+### 🌐 3. Setup Frontend (React)
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+---
+
+## 📂 Folder Structure
+
+```
+newsfeed-app/
 ├── backend/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
-│   ├── middleware/
-│   └── server.js
-│
+│   ├── server.js
 ├── frontend/
-│   ├── components/
-│   ├── pages/
-│   ├── utils/
-│   └── index.js
-│
-└── README.md
-```  
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.js
+```
 
-## 🌟 Highlights  
-- **Authentication and Security:** Users are authenticated with JWT, ensuring data protection and secure access.  
-- **Efficient Media Handling:** Cloudinary integration enables fast and reliable media uploads and storage.  
-- **Scalability:** Modular architecture ensures the application is scalable and easy to maintain.  
+---
 
-## 🔧 Installation and Setup  
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/your-username/newsfeed.git  
-   cd newsfeed  
-   ```  
-2. Install dependencies for both backend and frontend:  
-   ```bash  
-   cd backend  
-   npm install  
-   cd ../frontend  
-   npm install  
-   ```  
-3. Set up environment variables for backend:  
-   - `JWT_SECRET`: Secret key for JWT authentication.  
-   - `CLOUDINARY_URL`: Cloudinary API key for media storage.  
+## 📌 Routes Overview
 
-4. Run the application:  
-   - Start the backend server:  
-     ```bash  
-     cd backend  
-     npm start  
-     ```  
-   - Start the frontend:  
-     ```bash  
-     cd frontend  
-     npm start  
-     ```  
+### Backend API
 
-5. Access the application in your browser at `http://localhost:3000`.  
+| Method | Route                              | Description              |
+|--------|------------------------------------|--------------------------|
+| GET    | `/api/v1/posts`                    | Get all posts            |
+| POST   | `/api/v1/create/post`                    | Create a new post        |
+| POST   | `/api/v1/comments/comment`   | Add a comment to a post  |
 
-🤝 Contributions  
-Contributions are welcome! Feel free to fork the repository and submit pull requests.  
+---
 
-📧 Contact  
-For any queries or collaboration opportunities, feel free to reach out:  
-- **Email:** [amanlnctcs22@gmail.com]  
-- **LinkedIn:** [[LinkedIn Profile](https://www.linkedin.com/in/amanprakash21/)] 
+## 📷 UI Preview
 
---- 
+> Coming soon – Add screenshots here for homepage, create post, comment section
+
+---
+
+## 💡 TODO (Optional Features)
+
+- [ ] Like & Reaction System
+- [ ] User Authentication (JWT)
+- [ ] Infinite Scroll / Pagination
+- [ ] Avatar and Timestamps
+- [ ] Post Edit/Delete
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first.
+
+---
+
+## 📃 License
+
+MIT License
