@@ -8,7 +8,7 @@ const NewsFeedPage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/posts`);
+        const res = await fetch('http://localhost:4000/api/v1/posts');
         const data = await res.json();
 
         // If your backend returns { posts: [...] }, use data.posts

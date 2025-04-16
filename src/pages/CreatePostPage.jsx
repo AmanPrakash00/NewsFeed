@@ -23,7 +23,7 @@ const CreatePostPage = () => {
 
     try {
       // Replace with your backend API route
-      const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/create/post`, {
+      const res = await fetch('http://localhost:4000/api/v1/create/post', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

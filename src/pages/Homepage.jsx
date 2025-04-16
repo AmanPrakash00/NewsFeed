@@ -7,7 +7,7 @@ const HomePage = () => {
 
   const fetchAllPosts = async () => {
     try {
-      const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/v1/posts`);
+      const res = await fetch('http://localhost:4000/api/v1/posts');
       const data = await res.json();
       setPosts(data.posts || []);
     } catch (err) {
